@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8vh; 
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    align-items: center;
+    background-color:  hsl(275, 100%, 97%);
+}
+#total-content{
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-family: 'Work Sans';
+}
+.wide-top-background{
+    width: 100vw;
+    margin: 0;
+}
+.phone-top-background{
+    display: none;
+}
+#faq-panel{
+    width: 42vw;
+    background-color: hsl(0,0%,100%);
+    position: absolute;
+    top: 6.5vw;
+    border-radius: 1vw;
+    box-shadow: 1vw 1vw 1vw hsla(276, 51%, 34%, 0.182);
+}
+#faq-panel-container{
+    display: flex;
+    justify-content: center;
+    margin: 6vw;
+}
+#faq-top{
+    display: block;
+    position: relative;
+    top: -1.5vw;
+    left: 2.5vw;
+    margin: 0;
+    height: 5vw;
+}
+#star{
+    display: inline-block;
+    position: relative;
+    top: 0.4vw;
+    width: 3vw;
+    height: 3vw;
+}
+.qa{
+    border-bottom: 0.1vw solid rgba(0, 0, 0, 0.065);
+}
+#last{
+    border: 0;
+}
+#faq-header{
+    color:  hsl(292, 42%, 14%);
+    position: relative;
+    left: 1vw;
+    font-size: 3.75vw;
+    display: inline-block;
+    font-weight: 750;
+}
+#faq-content{
+    margin: 2.5vw 2.5vw 0.5vw 2.5vw;
+    width: 37vw;
+}
+.faqs{
+    color:  hsl(292, 42%, 14%);
+    font-size: 1.3vw;
+    font-weight: 700;
+    line-height: 2.2vw;
+}
+.faqs p{
+    display: inline-block;
+}
+.faqs p:hover{
+    color: #AD28EB;
+}
+.faq-answers{
+    line-height: 1.5vw;
+    font-size: 1.1vw;
+    word-spacing: 0.05vw;
+    text-wrap: wrap;
+    word-spacing: 0.05vw;
+    display: none;
+    font-weight: 500;
+    color: hsl(292, 16%, 49%);
+}
+.plus, .minus{
+    width: 2.5vw; 
+    height: 2.5vw;
+    display: inline;
+}
+.minus{
+    display: none;
+}
+#first-plus{
+    position: relative;
+    left: 1.9vw;
+    top: 0.9vw;
+}
+#second-plus{
+    position: relative;
+    top: 0.9vw;
+    left: 18.45vw;
+}
+#third-plus{
+    position: relative;
+    top: 0.9vw;
+    left: 1.35vw;
+}
+#fourth-plus{
+    position: relative;
+    top: 0.9vw;
+    left: 4.85vw;
+}
+#first-minus{
+    position: relative;
+    top: 0.98vw;
+    left: 1.95vw;
+}
+#second-minus{
+    position: relative;
+    top: 0.98vw;
+    left: 18.5vw;
+}
+#third-minus{
+    position: relative;
+    top: 0.98vw;
+    left: 1.4vw;
+}
+#fourth-minus{
+    position: relative;
+    top: 1.2vw;
+    left: 4.8vw;
+}
+#faq-top:hover, .faqs:hover, .faq-answers:hover, .minus:hover, .plus:hover{
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width: 480px){
+body{
+    width: 100vw;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;    
+}
+#total-content{
+    height: fit-content;
+    width: 100vw;
+    overflow: hidden;
+}
+.wide-top-background{
+    display: none;
+}
+.phone-top-background{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+    display: block;
+}
+#faq-panel{
+    width: 85vw;
+    margin: 0vw;
+    border-radius: 1vh;
+    margin-bottom: 15vh;
+    box-shadow: 1vw 1vh 2vh hsla(323, 62%, 67%, 0.079);
+}
+#faq-panel-container{
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    width: 100vw;
+}
+#faq-top{
+    top: -1vh;
+    left: 5vw;
+    margin: 0;
+    height: 5vh;
+}
+#star{
+    top: 0.2vh;
+    width: 3vh;
+    height: 3vh;
+}
+.qa{
+    border-bottom: 0.1vh solid rgba(0, 0, 0, 0.065);
+}
+#faq-header{
+    left: 3.5vw;
+    font-size: 4vh;
+}
+#faq-content{
+    margin: 2.5vh 5vw 0.5vh 5vw;
+    width: 75vw;
+}
+.faqs{
+    font-size: 2vh;
+    line-height: 2.2vh;
+    width: 60vw;
+    position: relative;
+    display: inline-flex;
+} 
+.faqs p:hover{
+    color:hsl(292, 42%, 14%);
+}
+.faq-answers{
+    line-height: 2.5vh;
+    font-size: 1.7vh;
+    word-spacing: 0vh;
+}
+.plus, .minus{
+    position: absolute;
+    width: 10vw; 
+    height: 10vw;
+    display: block;
+}
+.minus{
+    display: none;
+}
+#first-plus{
+    position: absolute;
+    left: 65vw;
+    top: 2vh;
+}
+#second-plus{
+    position: absolute;
+    top: 1vh;
+    left: 65vw;
+}
+#third-plus{
+    position: absolute;
+    top: 2vh;
+    left: 65.3vw;
+}
+#fourth-plus{
+    position: absolute;
+    top: 2vh;
+    left: 65.3vw;
+}
+#first-minus{
+    position: absolute;
+    top: 2vh;
+    left: 65vw;
+}
+#second-minus{
+    position: absolute;
+    top: 1vh;
+    left: 65vw;
+}
+#third-minus{
+    position: absolute;
+    top: 2vh;
+    left: 65vw;
+}
+#fourth-minus{
+    position: absolute;
+    top: 2vh;
+    left: 65.3vw;
+}
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
