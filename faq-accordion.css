@@ -97,7 +97,7 @@ p{
     display: none;
     font-weight: 500;
     color: hsl(292, 16%, 49%);
-    display: flex;
+    display: none;
     align-items: center;
 }
 .plus, .minus{
