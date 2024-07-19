@@ -5,9 +5,9 @@ body{
     margin-bottom: 8vh; 
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    align-items: center;
+    overflow: hidden;
     background-color:  hsl(275, 100%, 97%);
+    box-sizing: border-box;
 }
 #total-content{
     width: 100%;
@@ -16,6 +16,7 @@ body{
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: column nowrap;
 }
 p{
@@ -38,13 +39,8 @@ p{
     width: 42vw;
     background-color: hsl(0,0%,100%);
     position: relative;
-    top: 6.5vw;
     border-radius: 1vw;
     box-shadow: 1vw 1vw 4vw hsla(276, 51%, 34%, 0.182);
-    margin-bottom: 5vh;
-}
-#faq-panel-container{
-    margin-bottom: 5vw;
 }
 #faq-top{
     display: block;
@@ -151,7 +147,7 @@ p{
 #faq-top:hover, .faqs:hover, .faq-answers:hover, .minus:hover, .plus:hover{
     cursor: pointer;
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media(min-width: 500px){
