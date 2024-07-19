@@ -1,26 +1,35 @@
-var acc = document.getElementsByClassName("faqs");
-var i;
-for (i = 0; i < acc.length; i++){
-    const info = document.getElementsByClassName("plus");
-    const hide = document.getElementsByClassName("minus");
-    const information = info[i];
-    const negligence = hide[i];
-    acc[i].addEventListener("click",function() {
-    var panel = this.nextElementSibling;
-    if(panel.style.display === "none"){
-        panel.style.display = "block";
-    } else {
-        panel.style.display = "none";    
-    }
-    if(information.style.display === "inline"){
-        information.style.display = "none";
-        negligence.style.display = "inline";
-    } else {
-        information.style.display = "inline";
-        negligence.style.display = "none";
-    }
+const faqs = document.querySelectorAll(".faqs");
+const faqans = document.querySelectorAll(".faq-answers");
+const info = document.querySelectorAll(".plus");
+const hide = document.querySelectorAll(".minus");
+
+faqs.forEach((faq,i) => {
+    faq.addEventListener('click',()=>{
+        faqans.forEach((faqan,n)=>{
+            if(n === i){
+                faqan.classList.toggle('none');
+                if(faqan.classList.contains('none')){
+                    info[n].classList.remove('none');
+                    hide[n].classList.remove('inline');
+                    info[n].classList.add('inline');
+                    hide[n].classList.add('none');
+                } else {
+                    info[n].classList.remove('inline');
+                    hide[n].classList.remove('none');
+                    info[n].classList.add('none');
+                    hide[n].classList.add('inline');
+                }
+            } else {
+                faqan.classList.add('none');
+                info[n].classList.remove('none');
+                hide[n].classList.remove('inline');
+                info[n].classList.add('inline');
+                hide[n].classList.add('none');
+            }
+        })
     })
-}
+})
+
 
 
 

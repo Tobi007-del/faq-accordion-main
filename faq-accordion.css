@@ -21,6 +21,12 @@ body{
 p{
     font-family: 'Work Sans';
 }
+.none{
+    display: none;
+}
+.inline{
+    display: inline;
+}
 .wide-top-background{
     width: 100vw;
     margin: 0;
@@ -34,7 +40,7 @@ p{
     position: relative;
     top: 6.5vw;
     border-radius: 1vw;
-    box-shadow: 1vw 1vw 1vw hsla(276, 51%, 34%, 0.182);
+    box-shadow: 1vw 1vw 4vw hsla(276, 51%, 34%, 0.182);
     margin-bottom: 5vh;
 }
 #faq-panel-container{
@@ -94,19 +100,13 @@ p{
     word-spacing: 0.05vw;
     text-wrap: wrap;
     word-spacing: 0.05vw;
-    display: none;
     font-weight: 500;
     color: hsl(292, 16%, 49%);
-    display: none;
     align-items: center;
 }
 .plus, .minus{
     width: 2.5vw; 
     height: 2.5vw;
-    display: inline;
-}
-.minus{
-    display: none;
 }
 #first-plus{
     position: relative;
@@ -242,10 +242,6 @@ body{
     position: absolute;
     width: 5vh; 
     height: 5vh;
-    display: block;
-}
-.minus{
-    display: none;
 }
 #first-plus{
     position: absolute;
