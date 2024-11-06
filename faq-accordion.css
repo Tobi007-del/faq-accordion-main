@@ -94,7 +94,7 @@ p{
     line-height: 1.5vw;
     font-size: 1.1vw;
     word-spacing: 0.05vw;
-    text-wrap: wrap;
+    white-space: wrap;
     word-spacing: 0.05vw;
     font-weight: 500;
     color: hsl(292, 16%, 49%);
